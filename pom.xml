@@ -33,6 +33,10 @@
     <id>nexus</id>
     <url>http://localhost:8081/repository/nexus-repos/</url>
   </repository>
+   <repository>
+    <id>nexus</id>
+    <url>http://localhost:8081/repository/nexus-repo/</url>
+  </repository>
 </distributionManagement>
 
 
