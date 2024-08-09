@@ -28,16 +28,17 @@
     </dependency>
   </dependencies>
 
-  <distributionManagement>
-  <repository>
-    <id>nexus</id>
-    <url>http://localhost:8081/repository/nexus-repos/</url>
-  </repository>
-   <repository>
-    <id>nexus</id>
-    <url>http://localhost:8081/repository/nexus-repo/</url>
-  </repository>
-</distributionManagement>
+   <distributionManagement>
+		 <snapshotRepository>
+		    <id>nexus</id>
+		    <url>http://localhost:8081/repository/nexus-repo/</url>
+		 </snapshotRepository>
+
+		<repository>
+		    <id>nexus</id>
+		    <url>http://localhost:8081/repository/nexus-repos/</url>
+		</repository>
+  	</distributionManagement>
 
 
   <build>
