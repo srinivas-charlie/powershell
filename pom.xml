@@ -17,6 +17,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
+    <sonar.host.url>http://localhost:6677/</sonar.host.url>
   </properties>
 
   <dependencies>
@@ -28,24 +29,16 @@
     </dependency>
   </dependencies>
 
-   <distributionManagement>
-		 <snapshotRepository>
-		    <id>nexus-repo</id>
-		    <url>http://localhost:8081/repository/nexus-repo/</url>
-		 </snapshotRepository>
-
-		<repository>
-		    <id>nexus-repos</id>
-		    <url>http://localhost:8081/repository/nexus-repos/</url>
-		</repository>
-	</distributionManagement>
-
-	<properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
-    <sonar.host.url>http://localhost:6677/</sonar.host.url>
-  </properties>
+  <distributionManagement>
+        <repository>
+            <id>nexus-repo</id>
+            <url>http://localhost:8081/repository/nexus-repos/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-repo</id>
+            <url>http://localhost:8081/repository/nexus-repo/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 
   <build>
