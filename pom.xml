@@ -18,6 +18,7 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
     <sonar.host.url>http://localhost:6677</sonar.host.url>
+    <sonar.token>sqa_43ce03f24aaeeab2d20288ae121f12327ee65d4e</sonar.token>
   </properties>
 
   <dependencies>
